@@ -9,7 +9,7 @@ namespace ExerciciosTooC_
         public double Price { get; set; }
         public string Description { get; set; }
 
-        private List<string> categories = new List<string>();
+        private List<string> categories { get; set; } = new List<string>();
         public List<string> Categories
         {
             get { return categories; }
