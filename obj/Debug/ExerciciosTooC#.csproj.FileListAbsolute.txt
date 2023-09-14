@@ -1,0 +1,7 @@
+C:\Users\luizr\Desktop\projetos\projetos proprios\C#\ExerciciosTooC#\bin\Debug\ExerciciosTooC#.exe.config
+C:\Users\luizr\Desktop\projetos\projetos proprios\C#\ExerciciosTooC#\bin\Debug\ExerciciosTooC#.exe
+C:\Users\luizr\Desktop\projetos\projetos proprios\C#\ExerciciosTooC#\bin\Debug\ExerciciosTooC#.pdb
+C:\Users\luizr\Desktop\projetos\projetos proprios\C#\ExerciciosTooC#\obj\Debug\ExerciciosTooC#.csproj.AssemblyReference.cache
+C:\Users\luizr\Desktop\projetos\projetos proprios\C#\ExerciciosTooC#\obj\Debug\ExerciciosTooC#.csproj.CoreCompileInputs.cache
+C:\Users\luizr\Desktop\projetos\projetos proprios\C#\ExerciciosTooC#\obj\Debug\ExerciciosTooC#.exe
+C:\Users\luizr\Desktop\projetos\projetos proprios\C#\ExerciciosTooC#\obj\Debug\ExerciciosTooC#.pdb
