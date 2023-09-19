@@ -1,25 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ExerciciosTooC_
+namespace ExerciciosTooC_.ExProduct
 {
     internal class ProductList
     {
         public List<Product> PList { get; private set; }
-
         public ProductList()
         {
             PList = new List<Product>();
-        }
-
-        public ProductList(List<Product> pList)
-        {
-            PList = new List<Product>();
-
-            foreach (Product product in pList)
-            {
-                PList.Add(product);
-            }
         }
         private void AwaitEnter()
         {

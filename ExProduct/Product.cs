@@ -1,32 +1,23 @@
 ﻿using System.Collections.Generic;
 
-namespace ExerciciosTooC_
+namespace ExerciciosTooC_.ExProduct
 {
     internal class Product
     {
         private static int IdCounter = 0;
+        private List<string> categories { get; set; } = new List<string>();
+        private int Quantity { get; set; }
         public string Name { get; set; }
         public double Price { get; set; }
         public string Description { get; set; }
+        public int Id { get; }
 
-        private List<string> categories { get; set; } = new List<string>();
         public List<string> Categories
         {
             get { return categories; }
-            set
-            {
-                categories.Clear();
-                foreach (string category in value)
-                {
-                    categories.Add(category);
-                }
-            }
         }
 
-        private int Quantity { get; set; }
-        public int Id { get; }
-
-        public Product(string name, double price, string description, List<string> categories)
+        public Product(string name, double price, string description)
         {
             Id = IdCounter;
             IdCounter++;
@@ -34,8 +25,23 @@ namespace ExerciciosTooC_
             Name = name;
             Price = price;
             Description = description;
-            Quantity = 0;
+        }
 
+        public Product(string name, double price, string description, int quantity) : this(name, price, description)
+        {
+            Quantity = quantity;
+        }
+
+        public Product(string name, double price, string description, List<string> categories) : this(name, price, description)
+        {
+            foreach (string category in categories)
+            {
+                Categories.Add(category);
+            }
+        }
+
+        public Product(string name, double price, string description, int quantity, List<string> categories) : this(name, price, description, quantity)
+        {
             foreach (string category in categories)
             {
                 Categories.Add(category);
@@ -79,9 +85,10 @@ namespace ExerciciosTooC_
             }
             return categoriesString;
         }
-        public double GetTotalPrice()
+        public long GetTotalPrice()
         {
-            return Price * Quantity;
+            long total = (long)(Price * Quantity);
+            return total;
         }
 
         public bool IsAvailable()
