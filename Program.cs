@@ -1,4 +1,6 @@
-﻿using ExerciciosTooC_.ExProduct;
+﻿using ExerciciosTooC_.ExPost;
+using ExerciciosTooC_.ExProduct;
+using System;
 using System.Collections.Generic;
 
 namespace ExerciciosTooC_
@@ -7,9 +9,39 @@ namespace ExerciciosTooC_
     {
         static void Main(string[] args)
         {
-            ExProduct();
+            //ExProduct();
+            ExPost();
         }
 
+        static void ExPost()
+        {
+            Post post1 = new Post("Traveling to New Zealand", "I'm going to visit this wonderful country!", DateTime.Now);
+
+            post1.AddComment(new Comment("Have a nice trip"));
+            post1.AddComment(new Comment("Wow that's awesome!"));
+            post1.AddComment(new Comment("Good luck!"));
+
+            post1.Like();
+            post1.Like();
+            post1.Like();
+            post1.Like();
+
+            Console.WriteLine(post1);
+            Console.WriteLine("Press Enter to Continue...");
+            Console.ReadLine();
+
+            Post post2 = new Post("Good night guys", "See you tomorrow", DateTime.Now);
+            post2.AddComment(new Comment("Good night"));
+            post2.AddComment(new Comment("May the Force be with you"));
+            post2.Like();
+            post2.Like();
+
+            Console.WriteLine(post2);
+
+            Console.WriteLine("Press Enter to Exit...");
+            Console.ReadLine();
+
+        }
         static void ExProduct()
         {
             ProductList list = new ProductList();

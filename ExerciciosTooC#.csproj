@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExPost\Comment.cs" />
+    <Compile Include="ExPost\Post.cs" />
     <Compile Include="ExProduct\Product.cs" />
     <Compile Include="ExProduct\ProductList.cs" />
     <Compile Include="Program.cs" />
